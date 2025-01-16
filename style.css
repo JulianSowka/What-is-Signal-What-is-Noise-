@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #000;
+  }
+
+
+header {
+    margin-top: 3em;
+    text-align: center;
+    color: white;
+
+}
+  header h1 {
+    font-size: 2em;
+    font-weight: 900;
+  }
+
+  #container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    src: url('./libs/fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('./libs/fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Serif';
+    src: url('./libs/fonts/Roboto-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Courier New';
+  src: local('Courier New'), local('Courier'), url('./fonts/Courier-New.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: local('Arial'), url('./fonts/Arial.ttf') format('truetype');
+}
+
+#SignalNoiseLogo {
+  position: fixed;   /* Fixes it in place */
+  top: 0vh;         /* Adjust the distance from the top */
+  left: 50%;         /* Center it horizontally */
+  transform: translateX(-50%);
+  width: 20vw;      /* Adjust width */
+  height: auto;      /* Maintain aspect ratio */
+  z-index: 1000;     /* Ensure it stays on top */
+}
+
+#camera-info {
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 5px 5px;
+  border-radius: 2vh;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1vh;
+  color: yellow;
+  z-index: 1000; /* Ensure it's on top */
+  pointer-events: none; /* Non-interruptive */
+}
